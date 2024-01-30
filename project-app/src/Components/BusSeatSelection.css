@@ -1,0 +1,179 @@
+.comtainer-master {
+  display: flex;
+justify-content: center;
+}
+
+.seat-selection-container {
+    border: 1px solid #422424;
+    width: 60%;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    background-color: rgb(228, 236, 236);
+  }
+  .booked {
+    background-color: red;
+    color: rgba(255, 255, 255, 0.873);
+    padding: 5px;
+    cursor: not-allowed;
+  }
+  
+  
+  .seat.booked {
+    background-color: #f93838; /* Red color for booked seats */
+    color: #fff;
+    border: 1px solid #ff4646;
+    cursor: not-allowed; /* Change cursor to indicate that the seat is not selectable */
+  }
+  
+  
+  .bus-seats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .seat-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .seat {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #795f5f;
+    cursor: pointer;
+  }
+  
+  .selected {
+    background-color: rgb(1, 52, 5);
+    color: #fff;
+    padding: 5px;
+    border: 1px solid #37b929;
+  }
+  
+  .available {
+    background-color: #fff;
+  
+    padding: 5px;
+  }
+  
+  .total-price-and-button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  
+  .legend {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+  }
+  
+  .legend-item {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    border: 1px solid #422424;
+  }
+  
+  
+  .seat:hover {
+    filter: brightness(1.5);
+  }
+  
+  
+  .total-price-and-button {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Asile */
+  .seat-row .seat:nth-child(2) {
+    margin-right: 35px;
+  }
+  
+  /* gap for the seats in the last row */
+  .seat-row:last-child .seat {
+    margin: 3px;
+  }
+  
+  /* Styles for legend container */
+.legends-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+/* Styles for legend items */
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+/* Styles for legend boxes */
+.legend-box {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  border: 1px solid #422424;
+}
+
+/* Styles for booked seats legend items */
+.booked .legend-box {
+  background-color: red;
+}
+
+/* Styles for available seats legend items */
+.available .legend-box {
+  background-color: #fff;
+}
+
+/* Styles for selected seats legend items */
+.selected .legend-box {
+  background-color: rgb(1, 52, 5);
+}
+
+/* Rest of your existing styles */
+
+
+.bus-seat-selection-heading {
+  border: none;
+  background-color: transparent;
+}
+.seat-status {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #f2eeee; /* Default color for any status */
+}
+
+.seat-status {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-left: 50px;
+  margin-right: 15px; /* Adjust this value to your desired spacing */
+  float : left;
+}
+
+.booked {
+  background-color: red;
+}
+
+.available {
+  background-color: grey;
+}
+
+.selected {
+  background-color: green;
+}

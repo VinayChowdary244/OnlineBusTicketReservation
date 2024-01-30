@@ -1,0 +1,43 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  th,
+  td {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+  }
+  
+  th {
+    background-color: #eee;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f8f9fa;
+  }
+  
+  table {
+    color: #333;
+    font-family: sans-serif;
+  }
+  
+  th,
+  td {
+    text-align: center;
+  }
+  
+  th {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f8f9fa;
+  }
+  
+  tr:hover {
+    background-color: #ccc;
+  }
+  

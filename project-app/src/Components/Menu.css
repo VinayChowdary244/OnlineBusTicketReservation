@@ -1,0 +1,71 @@
+/* Menu.css */
+
+/* Top bar styles */
+.top-bar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  background-color: #d0dae3;
+}
+
+.top-bar .nav-link {
+  color: rgb(16, 16, 164);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.top-bar .nav-link:hover {
+  background-color: #e3e9ef; /* Change the background color on hover */
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #e2e7ed;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  margin-right: 15px;
+}
+
+.nav-link {
+  color: #0f0f0f;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.nav-link:hover {
+  background-color: #34495e; /* Change the background color on hover */
+}
+
+/* Icon styles */
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+/* Main container styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+body {
+    
+  background-size: cover;
+  font-family: 'Arial', sans-serif;
+  margin: 0; /* Added to remove default body margin */
+  background: url('https://wallpapercave.com/dwp2x/wp5563912.jpg');
+}

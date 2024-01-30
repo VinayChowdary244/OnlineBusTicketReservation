@@ -1,0 +1,90 @@
+/* UserHistory.css */
+
+/* Alert Success */
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    padding: 10px;
+  }
+  
+  /* Switch Buttons */
+  .switch-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .switch-buttons button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: #4CAF50;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .switch-buttons button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 0 10px 10px 0;
+    transform-origin: left center;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  
+  .switch-buttons button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+  }
+  
+  .switch-buttons button:hover::before {
+    transform: scaleX(1);
+  }
+  
+  /* Button Success */
+  .btn-success {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  /* Table Styles */
+  .table {
+    width: 90%;
+    margin-bottom: 1rem;
+    color: #212529;
+    border-collapse: collapse;
+  }
+  
+  .table th,
+  .table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  .table th {
+    background-color: #f8f9fa;
+  }
+  
+  .table tbody tr {
+    opacity: 1;
+  }
+  
+  
+  
+  
+  
+  

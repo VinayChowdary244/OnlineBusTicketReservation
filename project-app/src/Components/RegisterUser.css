@@ -1,0 +1,47 @@
+/* RegisterUser.css */
+
+.register-container {
+  max-width: 400px;
+  margin: 0px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff; /* Set background color to white */
+}
+
+.register-heading {
+  text-align: center;
+  color: #333;
+}
+
+.registerForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.label-input-container {
+  margin-bottom: 0px; 
+}
+
+.form-control {
+  width: calc(100% - 16px); 
+  padding: 8px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  box-sizing: border-box;
+}
+
+label {
+  color: red;
+  font-size: 12px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  padding: 10px;
+  width: 48%;
+}

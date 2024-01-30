@@ -46,10 +46,7 @@ function RedBus() {
     localStorage.setItem('thisDate', selectedDate,cost);
     
 
-    // Additional logic for booking if needed
-    // ...
-    // Navigate to the component where you can select seats
-    navigate('/BusSeatSelection');
+   navigate('/BusSeatSelection');
   };
 
   const handleSearch = (event) => {
@@ -65,10 +62,13 @@ function RedBus() {
     }
     const selectedDateObject = new Date(selectedDate);
     const currentDate = new Date();
-  
-    if (selectedDateObject < currentDate) {
+
+    var yesterday = new Date(currentDate);
+    yesterday.setDate(currentDate.getDate() - 1);
+    
+    if (selectedDateObject < yesterday) {
       alert('Please enter a valid date (today or later).');
-      return ;
+      return;
     }
 
     axios

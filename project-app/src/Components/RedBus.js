@@ -17,6 +17,9 @@ function RedBus() {
   const [searchPerformed, setSearchPerformed] = useState(false);
   const [thisBus, setThisBus] = useState(null);
   const [thisDate, setThisDate] = useState(null);
+  const [type, setType] = useState(null);
+  const [startTime, setStarttime] = useState(null);
+
   
 
   const checkUserData = () => {
@@ -36,17 +39,19 @@ function RedBus() {
 
   const navigate = useNavigate();
 
-  const handleBook = (id, selectedDate,cost) => {
+  const handleBook = (id, selectedDate, cost,type,startTime) => {
     setThisBus(id);
     setThisDate(selectedDate);
-    
-    console.log(thisBus,thisDate);
-    localStorage.setItem("cost",cost);
+  
+    localStorage.setItem('cost', cost);
     localStorage.setItem('thisBus', id);
-    localStorage.setItem('thisDate', selectedDate,cost);
-    
+    localStorage.setItem('thisDate', selectedDate);
+    localStorage.setItem('type', type);
+    localStorage.setItem('startTime', startTime);
 
-   navigate('/BusSeatSelection');
+  
+    
+    navigate('/BusSeatSelection');
   };
 
   const handleSearch = (event) => {
@@ -62,6 +67,9 @@ function RedBus() {
     }
     const selectedDateObject = new Date(selectedDate);
     const currentDate = new Date();
+    localStorage.setItem('toLocation', toLocation);
+    localStorage.setItem('fromLocation', fromLocation);
+
 
     var yesterday = new Date(currentDate);
     yesterday.setDate(currentDate.getDate() - 1);
@@ -127,7 +135,7 @@ function RedBus() {
                 value={toLocation}
                 onChange={(e) => setToLocation(e.target.value)}
               />
-            </div>
+            </div> 
           </div>
           <div className="date-container">
             <div className="calendar-icon">
@@ -182,7 +190,7 @@ function RedBus() {
                       <center>
                         <button
                           className="book-button"
-                          onClick={() => handleBook(bus.id, selectedDate,bus.cost)}
+                          onClick={() => handleBook(bus.id, selectedDate,bus.cost,bus.type,bus.startTime)}
                         >
                           Book
                         </button>

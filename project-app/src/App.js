@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import './App.css';
 import BusSeatSelection from './Components/BusSeatSelection';
-import SearchBus from './Components/SearchBus';
 import UpdateUser from './Components/UpdateUser';
 import Seat from './Components/Seat';
 import Menu from './Components/Menu';
@@ -24,6 +23,7 @@ import { AuthProvider } from './Components/AuthContext';
 import CancelledBookings from './Components/CancelledBookings';
 import TicketCard from './Components/TicketCard.js';
 import MainMenu from './Components/MainMenu.js';
+import BusTicket from './Components/BusTicket';
 
 function App() {
   return (
@@ -54,6 +54,8 @@ function App() {
 
         <Route path="Logout" element={<Logout/>}/>
         <Route path="TicketCard" element={<TicketCard/>}/>
+        <Route path="BusTicket" element={<BusTicket/>}/>
+
 
         
       </Routes>

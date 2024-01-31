@@ -45,6 +45,12 @@ function MainMenu() {
                       Logout
                     </Link>
                   </li>
+                  <li className="nav-item">
+                    <Link className="nav-link" to="/BusTicket">
+                      BusTicket
+                    </Link>
+                  </li>
+                  
                 </>
               )}
 
